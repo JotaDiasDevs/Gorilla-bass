@@ -5,3 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gorila vs 100 Humanos</title>
     <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Gorila vs 100 Humanos</h1>
+        <div id="game-stats">
+            <div class="stat">
+                <span>Humanos Restantes:</span>
+                <span id="human-count">100</span>
+            </div>
+            <div class="stat">
+                <span>Vida do Gorila:</span>
+                <div class="health-bar">
+                    <div id="gorilla-health" class="health" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <span>Ataques:</span>
+                <span id="attack-count">0</span>
+            </div>        
+        </div>
+        <div class="team-badge">
+            <span>Turma: 1 TDSPY</span>
+            <span>Grupo: Tropa do Gorila</span>
+        </div>
+    </header>
+
+    <main id="game-container">
+        <section id="gorilla-area" class="battle-area">
+            <div id="gorilla" class="character active">
+                <img src="./assets/gorila.png" alt="Gorila" class="character-img">
+                
+                <div class="character-info">
+                    <span class="character-name">Gorila</span>
+                    <div class="health-bar">
+                        <div id="gorilla-health-bar" class="health" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="humans-area" class="battle-area">
+            <div id="humans-container" class="humans-grid"></div>
+        </section>
+
+        <section id="controls">
+            <button id="attack-btn" class="btn attack">Atacar</button>
+            <button id="defend-btn" class="btn defend">Defender</button>
+            <button id="heal-btn" class="btn heal">Curar</button>
+            <button id="new-game-btn" class="btn secondary">Novo Jogo</button>
+        </section>
+
+        <section id="battle-log-container">
+            <h2>Histórico de Batalha</h2>
+            <div id="battle-log" class="log-content">
+                <p>O gorila entrou na arena contra 100 humanos!</p>
+                <p class="team-signature">Técnica especial: Investida Primata</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="group-members">
+            <h3>Integrantes</h3>
+            <ul>
+                <li>João Victor Semente Dias - RM562065</li>
+                <li>Victor Giraldo Mencarelli - RM562430</li>
+                <li>Felipe Rodrigues Moreira - RM555121</li>
+                <li>Breno da Fonseca Eleutério - RM564948</li>
+            </ul>
+        </div>
+        <p>CP3 - Desenvolvimento Front-end </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
