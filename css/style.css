@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../assets/selva-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 3px solid #4CAF50;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #4CAF50;
+}
